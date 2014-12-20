@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>GeoESPOL</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html;">
+		<meta name="author" content="Denny K. Schuldt">
+		<meta name="description" content="GeoESPOL project by TAWS">
+		<meta name="Keywords" content="HTML5, CSS3, Javascript, Jquery, ESPOL, FIEC, TAWS, GeoESPOL"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet prefetch" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div>
+				<h1>GeoESPOL</h1><h5>Beta</h5>
+				<p>Una de las mejores universidades del Ecuador, ahora en 3D</p>
+				<h3>Empezar</h3>
+				<span><i class="icon-angle-down"></i></span>
+			</div>
+		</header>
+		<div id="map3d"></div>
+		<div class="menu intro">
+			<h3>Menu</h3>
+			<a href="#" id="administracion">Edificios Administrativos</a>
+			<a href="#" id="aulas">Aulas y Laboratorios</a>
+			<a href="#" id="investigacion">Centros de Investigación</a>
+			<a href="#" id="deportes">Área Deportiva</a>
+			<a href="#" id="bibliotecas">Biblioteca</a>
+			<a href="#" id="otros">Otros</a>
+		</div>
+		<div class="menu intro administracion hidden">
+			<i class="fa fa-arrow-circle-o-left back"></i>
+			<h3>Edificios Administrativos</h3>
+			<a href="#" onclick="moveTo(-2.14571,-79.94876,-135.000000,165,0,65.000000);">PARCON</a>
+			<a href="#" onclick="moveTo(-2.15009,-79.94959,106.000000,78,0,63.000000);">Admisiones</a>
+			<a href="#" onclick="moveTo(-2.1518333333333333,-79.95714444444445,106.000000,78,0,63.000000);">Tecnologías</a>
+			<a href="#" onclick="moveTo(-2.1483444444444446,-79.96770277777777,-135.000000,165,0,65.000000);">Celex</a>
+			<a href="#" onclick="moveTo(-2.147788888888889, -79.96853055555556,-135.000000,165,0,65.000000);">FEN</a>
+			<a href="#">EDCOM</a>
+			<a href="#">FIMCBOR</a>
+			<a href="#">ESPOLTECH</a>
+			<a href="#">Rectorado</a>
+			<a href="#">APESPOL</a>
+			<a href="#">CSI</a>
+			<a href="#">Bienestar Estudiantil</a>
+			<a href="#">Asociación FIMCP</a>
+			<a href="#">SUTPOL</a>
+			<a href="#">CEPROEM</a>
+			<a href="#">FEPOL</a>
+			<a href="#">FIMCP</a>
+			<a href="#">ICQA</a>
+			<a href="#">ICF</a>
+			<a href="#">ICM</a>
+			<a href="#">FIEC</a>
+			<a href="#">CDP</a>
+		</div>
+		<div class="menu aulas hidden">
+			<i class="fa fa-arrow-circle-o-left back"></i>
+			<h3>Aulas y Laboratorios</h3>
+			<a href="#">Aulas Prepolitécnico</a>
+			<a href="#">Aulas de Ing. Básica</a>
+			<a href="#">Bloque 60</a>
+			<a href="#">Aulas EDCOM</a>
+			<a href="#">Aulas FEN</a>
+			<a href="#">Bloque Básico</a>
+			<a href="#">Laboratorios de ICQA-ICF</a>
+			<a href="#">Aulas ICM</a>
+			<a href="#">Laboratorios FIEC</a>
+			<a href="#">Aulas FIEC</a>
+			<a href="#">Aulas y Laboratorios FIEC</a>
+			<a href="#">Aulas y Laboratorios FIMCP</a>
+		</div>
+		<div class="menu investigacion hidden">
+			<i class="fa fa-arrow-circle-o-left back"></i>
+			<h3>Centros de Investigación</h3>
+			<a href="#" onclick="moveTo(-2.14509,-79.96661,-165.000000,74,0,68.000000);">CIDNA</a>
+			<a href="#" onclick="moveTo(-2.14608,-79.96429,-165.000000,63,0,68.000000);">CEMA</a>
+			<a href="#" onclick="moveTo(-2.14581,-79.94884,-68.000000,157,0,73.000000);">CTI</a>
+		</div>
+		<div class="menu deportes hidden">
+			<i class="fa fa-arrow-circle-o-left back"></i>
+			<h3>Área Deportiva</h3>
+			<a href="#" onclick="moveTo(-2.14368,-79.96806,-46.000000,92,0,64.000000);">Gimnasio</a>
+			<a href="#" onclick="moveTo(-2.14505,-79.96421,-15.000000,108,0,67.000000);">Coliseo</a>
+			<a href="#" onclick="moveTo(-2.15254,-79.95852,-15.000000,62,0,67.000000);">Complejo Deportivo Tecnologías</a>
+		</div>
+		<div class="menu bibliotecas hidden">
+			<i class="fa fa-arrow-circle-o-left back"></i>
+			<h3>Biblioteca</h3>
+			<a href="#" onclick="moveTo(-2.15152,-79.95711,-46.000000,58,0,64.000000);">Biblioteca Tecnologías</a>
+			<a href="#" onclick="moveTo(-2.14752,-79.96598,-78.000000,63,0,64.000000);">Biblioteca Ingenierías</a>
+			<a href="#" onclick="moveTo(-2.14618,-79.96726,16.000000,62,0,61.000000);">Biblioteca ICM</a>
+			<a href="#" onclick="moveTo(-2.14477,-79.96788,21.000000,45,0,79.000000);">Biblioteca FIEC</a>
+		</div>
+		<div class="menu otros hidden">
+			<i class="fa fa-arrow-circle-o-left back"></i>
+			<h3>Otros</h3>
+			<a href="#" onclick="moveTo(-2.14338,-79.97464,-58.000000,137,0,60.000000);">Brigada del Cuerpo de Bomberos</a>
+			<a href="#" onclick="moveTo(-2.14759,-79.96797,-129.000000,88,0,60.000000);">Auditorio FEN</a>
+			<a href="#" onclick="moveTo(-2.1477,-79.96734,-175.000000,93,0,71.000000);">Comedor FEN</a>
+			<a href="#" onclick="moveTo(-2.14818,-79.96488,-111.000000,38,0,63.000000);">Obelisco ESPOL</a>
+			<a href="#" onclick="moveTo(-2.14606,-79.96543,-53.000000,76,0,82.000000);">Agencia Banco del Pacífico</a>
+			<a href="#" onclick="moveTo(-2.14629,-79.96462,56.000000,85,0,60.000000);">Comedor</a>
+			<a href="#" onclick="moveTo(-2.1462,-79.9632,-6.000000,76,0,68.000000);">Comedor FIMCBOR</a>
+			<a href="#" onclick="moveTo(-2.14477,-79.9682,-73.000000,128,0,80.000000);">Auditorio FIEC</a>
+			<a href="#" onclick="moveTo(-2.1439,-79.96697,21.000000,56,0,79.000000);">Parque de la Ciencia AJÁ</a>
+			<a href="#" onclick="moveTo(-2.144,-79.9665,21.000000,54,0,79.000000);">Auditorio FIMCP</a>
+			<a href="#" onclick="moveTo(-2.15374,-79.95694,-157.000000,80,0,83.000000);">Residencia Deportiva</a>
+			<a href="#" onclick="moveTo(-2.15219,-79.95290,-116.000000,80,0,45.000000);">Garita ESPOL</a>
+			<a href="#" onclick="moveTo(-2.14221,-79.94712,-116.000000,80,0,78.000000);">Garita PARCON</a>
+		</div>
+		<!--<a href="#"><strong>FICT</strong> | Facultad de Ingenier&iacute;a en Ciencias de la Tierra</a>
+		<a href="#" onclick="facultad(-2.1448916666666666, -79.96736944444444,116.000000,250,0,65.000000);"><strong>FIEC</strong> | Facultad de Ingenier&iacute;a en Electricidad y Computaci&oacute;n</a>
+		<a href="#" onclick="facultad(-2.144277777777778,-79.96598333333334,-157.000000,122,0,74.000000);"><strong>FIMCP</strong> | Facultad de Ingenier&iacute;a en Mec&aacute;nica y Ciencias de la Producci&oacute;n</a>
+		<a href="#" onclick="facultad(-2.148747222222222,-79.96751666666667,165.000000,167,0,78.000000);"><strong>FCSH</strong> | Facultad de Ciencias Sociales y Human&iacute;sticas</a>
+		<a href="#" onclick="facultad(-2.146586111111111,-79.96704166666667,112.000000,80,0,77.000000);"><strong>FCNM</strong> | Facultad de Ciencias Naturales y Matem&aacute;ticas</a>
+		<a href="#"><strong>FIMCBOR</strong> | Facultad de Ingenir&iacute;a Mar&iacute;tima, Ciencias Biol&oacute;gicas, Oce&aacute;nicas y Recursos naturales</a>
+		<a href="#" onclick="facultad(-2.143288888888889,-79.96241111111111,-37.000000,341,0,81.000000);">EDCOM</a>-->
+	</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAwbkbZLyhsmTCWXbTcjbgbRSzHs7K5SvaUdm8ua-Xxy_-2dYwMxQMhnagaawTo7L1FE1-amhuQxIlXw"></script>
+	<script src="./js/classie.js"></script>
+	<script src="./js/functions.js"></script>
+</html>
